@@ -14,6 +14,18 @@ var styles = StyleSheet.create({
     right: 0,
 
     backgroundColor: "#DDA0DD"
+  },
+
+  wide: {
+    width: "50%"
+  },
+
+  wider: {
+    width: "60%"
+  },
+
+  widest: {
+    width: "70%"
   }
 
 });
