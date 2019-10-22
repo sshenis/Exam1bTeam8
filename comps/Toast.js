@@ -1,6 +1,10 @@
 import React,{useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import styles from '../styles/ToastStyles';
+
+// This is outside your function. It is supposed to be inside and before return
+/* It also seems like you are using an old method. Maybe try going about it using
+const method and useState. */
  
 /*state = {
     textValue: 'Toast'
