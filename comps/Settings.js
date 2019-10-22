@@ -17,9 +17,13 @@ function Settings(){
 
   const [showGear, setShowGear]= useState(false)
   
+  var tOpacity = 0;
   var popup = null;
   if(showGear === true){
-        popup = ()
+        tOpacity = 1;
+  } else {
+        tOpacity;
+  }
             
                 // {/* alert goes HERE */}
                 // Alert.alert(
@@ -35,12 +39,16 @@ function Settings(){
                 // ],
 
                 // {cancelable: false} 
+  }
     return (
 
     <View style={styles.settings}>
-        {popup}
+        <View>
+            <TouchableOpacity 
+            opacity={tOpacity}
 
-        <TouchableOpacity 
+            </TouchableOpacity>
+        </View>
             style={styles.settings}
             onPress={()=>{
                 setShowGear(!showGear);
@@ -49,7 +57,6 @@ function Settings(){
                 style={styles.button}
                 source={require('../img/gears.png')}
                 />
-        </TouchableOpacity>
 
     </View>
         
