@@ -7,7 +7,11 @@ var styles = StyleSheet.create({
     alignItems: "center",
     width: "30%",
     height: "15%",
-    backgroundColor: "yellow"
+    backgroundColor: "yellow",
+    marginBottom: 500,
+    borderColor: "#ffc107",
+    borderWidth: 5,
+    borderRadius: 10
   }
 });
  
