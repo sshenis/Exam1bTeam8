@@ -3,15 +3,16 @@ import {View, Text} from 'react-native';
 import styles from '../styles/MainStyles';
 
 
-import Settings from '../comps/Settings'
 
-import Right from '../comps/Right'
  
 // Import your own comps below
 
 import Toast from './Toast';
 
 import Left from '../comps/Left'
+import Settings from '../comps/Settings'
+
+import Right from '../comps/Right'
 
 
  
@@ -29,9 +30,9 @@ function Main(){
 
       <Toast />
 
-
-        <Right /
       <Left />
+      <Right />
+
 
 
 
