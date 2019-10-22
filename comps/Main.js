@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 import styles from '../styles/MainStyles';
  
 // Import your own comps below
-
+import Toast from './Toast';
  
 function Main(){
 
@@ -13,7 +13,7 @@ function Main(){
   return (
 
     <View style={styles.main}>
-      
+      <Toast />
     </View>
 
   )}
