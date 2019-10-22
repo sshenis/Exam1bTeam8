@@ -19,33 +19,32 @@ function Settings(){
   
   var popup = null;
   if(showGear === true){
-        popup = (
+        popup = ()
             
-                {/* alert goes HERE */}
-                Alert.alert(
+                // {/* alert goes HERE */}
+                // Alert.alert(
 
-                    {/* ALERT TITLE */}
-                "Hey",
+                //     {/* ALERT TITLE */}
+                // "Hey",
 
-                    {/* VALUE OF ALERT */}
-                "Hello",
+                //     {/* VALUE OF ALERT */}
+                // "Hello",
                 
-                [
-                {text: 'OK', onPress: () => console.log('OK Pressed')}
-                ],
+                // [
+                // {text: 'OK', onPress: () => console.log('OK Pressed')}
+                // ],
 
-                {cancelable: false}
-
-        )}  
+                // {cancelable: false} 
     return (
 
     <View style={styles.settings}>
         {popup}
 
-        <TouchableOpacity style={styles.settings}>
+        <TouchableOpacity 
+            style={styles.settings}
             onPress={()=>{
                 setShowGear(!showGear);
-            }}
+            }}>
             <Image
                 style={styles.button}
                 source={require('../img/gears.png')}
