@@ -11,10 +11,10 @@ function App(){
 
     <View style={styles.app}>
 
-      <Main/>
+      <Main />
 
     </View>
-    
+
   )}
 
 
