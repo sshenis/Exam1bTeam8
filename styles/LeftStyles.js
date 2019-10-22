@@ -9,6 +9,7 @@ var styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
+    zIndex: 0,
     backgroundColor: "#ffcba4"
   },
   title: {

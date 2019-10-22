@@ -9,12 +9,11 @@ function Left(){
   const [titleText, setTitleText] = useState("");
 
   // currently has no functionality
-  const [showImage, setShowImage] = useState(false);
+  // const [showImage, setShowImage] = useState(false);
   
   // Button
   var but = null;
   var bgImg = null;
-  if (showImage === false ) {
 
   
   if (titleText == "") {
@@ -41,30 +40,16 @@ function Left(){
    </View>
     )
   } 
-  // currently is not working but above is working
-  else {
-    bgImg = titleText;
-
-    but = (
-      <View>
-    <Button
-    style = {styles.button}
-    title = "Set Image" 
-   />
-     </View>
-      )
-
-  }
-}
-
-
-
-
-
+ 
 
   return (
 
-    <View style={[styles.left, {backgroundImage: bgImg}]}>
+    <View style={styles.left}>
+
+      <Image
+      style={{width: '100%', height: 100, zIndex: 1000}}
+      source = {{uri: ' https://cdn.shopify.com/s/files/1/3004/1474/products/orange-tabby_1800x1800.png?v=1544042837'}}
+      />
 
       {but}
 
@@ -77,6 +62,8 @@ function Left(){
       <Text style={styles.title}>Your image url is {titleText}</Text>
     </View>
 
-  )}
+  )
+}
+  
 
 export default Left;
