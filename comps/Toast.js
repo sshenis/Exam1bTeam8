@@ -32,7 +32,7 @@ function Toast(){
 
     if (count === 0) {
        box = (<TouchableOpacity
-           onPress={()=>{setFloat(!count)}}
+           onPress={()=>{setCount(!count)}}
          >
            <Text>{upToast}</Text>
          </TouchableOpacity>
@@ -42,7 +42,7 @@ function Toast(){
     if (count === 1) {
         box = (<TouchableOpacity
             style={{marginBottom: up}}
-            onPress={()=>{setFloat(!count)}}
+            onPress={()=>{setCount(!count)}}
           >
             <Text>{downToast}</Text>
           </TouchableOpacity>
