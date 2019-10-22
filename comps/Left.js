@@ -13,7 +13,10 @@ function Left(){
   
   // Button
   var but = null;
+  var bgImg = null;
+  if (showImage === false ) {
 
+  
   if (titleText == "") {
     but = (
     <View>
@@ -40,24 +43,28 @@ function Left(){
   } 
   // currently is not working but above is working
   else {
+    bgImg = titleText;
+
     but = (
       <View>
-      <Button
-      style = {styles.button}
-      title = "Set Image"
-      onPress={() => setShowImage(titleText)} 
-     />
+    <Button
+    style = {styles.button}
+    title = "Set Image" 
+   />
      </View>
       )
 
   }
+}
+
+
 
 
 
 
   return (
 
-    <View style={styles.left}>
+    <View style={[styles.left, {backgroundImage: bgImg}]}>
 
       {but}
 
