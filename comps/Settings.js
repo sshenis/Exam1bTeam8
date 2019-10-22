@@ -22,30 +22,15 @@ function Settings(){
   if(showGear === true){
         tOpacity = 1;
   } else {
-        tOpacity;
-  }
-            
-                // {/* alert goes HERE */}
-                // Alert.alert(
 
-                //     {/* ALERT TITLE */}
-                // "Hey",
 
-                //     {/* VALUE OF ALERT */}
-                // "Hello",
-                
-                // [
-                // {text: 'OK', onPress: () => console.log('OK Pressed')}
-                // ],
-
-                // {cancelable: false} 
-  }
+    tOpacity;
     return (
 
     <View style={styles.settings}>
         <View>
             <TouchableOpacity 
-            opacity={tOpacity}
+            opacity={tOpacity}>
 
             </TouchableOpacity>
         </View>
@@ -54,7 +39,7 @@ function Settings(){
                 setShowGear(!showGear);
             }}>
             <Image
-                style={styles.button}
+                style={[styles.button, bottom:0]}
                 source={require('../img/gears.png')}
                 />
 
