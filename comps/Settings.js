@@ -20,23 +20,36 @@ function Settings(){
   var popup = null;
   if(showGear === true){
         popup = (
-            <View>
-                {/* alert goes HERE */}
-
-            </View>
             
-        )
-}  
+                {/* alert goes HERE */}
+                Alert.alert(
+
+                    {/* ALERT TITLE */}
+                "Hey",
+
+                    {/* VALUE OF ALERT */}
+                "Hello",
+                
+                [
+                {text: 'OK', onPress: () => console.log('OK Pressed')}
+                ],
+
+                {cancelable: false}
+
+        )}  
     return (
 
-    <View style={styles.main}>
+    <View style={styles.settings}>
         {popup}
-        
-        <TouchableOpacity>
+
+        <TouchableOpacity style={styles.settings}>
+            onPress={()=>{
+                setShowGear(!showGear);
+            }}
             <Image
                 style={styles.button}
                 source={require('../img/gears.png')}
-            />
+                />
         </TouchableOpacity>
 
     </View>
