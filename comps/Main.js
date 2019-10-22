@@ -4,7 +4,7 @@ import styles from '../styles/MainStyles';
 import Right from '../comps/Right'
  
 // Import your own comps below
-
+import Left from '../comps/Left'
  
 function Main(){
 
@@ -14,7 +14,10 @@ function Main(){
   return (
 
     <View style={styles.main}>
-        <Right />
+
+        <Right /
+      <Left />
+
     </View>
 
   )}
